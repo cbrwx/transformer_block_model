@@ -1,4 +1,4 @@
-# # Transformer Block for Tensorflow
+# Transformer Block for Tensorflow
 
 This repository contains the implementation of a Transformer Block in Tensorflow. A Transformer Block is a building block of the Transformer architecture, which is a type of deep neural network architecture used for processing sequential data, such as natural language processing (NLP).
 
