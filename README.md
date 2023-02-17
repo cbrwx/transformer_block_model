@@ -1,22 +1,22 @@
-Transformer Block for Tensorflow
+# # Transformer Block for Tensorflow
 
 This repository contains the implementation of a Transformer Block in Tensorflow. A Transformer Block is a building block of the Transformer architecture, which is a type of deep neural network architecture used for processing sequential data, such as natural language processing (NLP).
 
-Classes
+# Classes
 - MultiHeadSelfAttention
 - PositionWiseFeedForward
 - TransformerBlock
 
-MultiHeadSelfAttention
+# MultiHeadSelfAttention
 - This class implements the Multi-Head Self Attention mechanism of the Transformer architecture. It takes in a query, key, value and mask and performs a dot product of the query and key and applies a softmax to obtain the attention weights. The context is then computed as the weighted sum of the values.
 
-PositionWiseFeedForward
+# PositionWiseFeedForward
 - This class implements the Position-Wise Feed-Forward mechanism of the Transformer architecture. It takes in an input and passes it through two dense layers with a ReLU activation in between.
 
-TransformerBlock
+# TransformerBlock
 - This class combines the MultiHeadSelfAttention and PositionWiseFeedForward mechanisms to form a Transformer block. It applies the MultiHeadSelfAttention mechanism to the input and then passes it through the PositionWiseFeedForward. The output is then normalized and added to the input, before being passed through a dropout layer.
 
-Model Summary
+# Model Summary
 - The implementation includes a model definition, which takes in an input of shape (None,) and outputs the result of passing the input through the TransformerBlock. The model is compiled with the Adam optimizer and binary cross-entropy loss. Running model.summary() displays a summary of the model architecture.
 
 To expand upon this code, one could consider the following possibilities:
